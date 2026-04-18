@@ -1,0 +1,11 @@
+{
+  "name": "mantle-cli-test",
+  "type": "module",
+  "packageManager": "yarn@4.12.0",
+  "scripts": {
+    "test": "node tests/transfer.test.js"
+  },
+  "devDependencies": {
+    "@mantleio/mantle-cli": "^0.1.10"
+  }
+}

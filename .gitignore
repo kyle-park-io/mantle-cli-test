@@ -5,3 +5,4 @@ node_modules/
 .pnp.loader.mjs
 address
 realclaw-config.json
+.claude/settings.local.json

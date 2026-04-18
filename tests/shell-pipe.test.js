@@ -10,32 +10,20 @@
  */
 
 import assert from "assert";
-import { execFileSync, execSync } from "child_process";
+import { execSync } from "child_process";
 import { writeFileSync, readFileSync, unlinkSync } from "fs";
 import { tmpdir } from "os";
 import { join } from "path";
 import { loadPrimaryAddress } from "../utils/addresses.js";
+import { runCli } from "../utils/cli.js";
 
 // ---------------------------------------------------------------------------
 // 헬퍼
 // ---------------------------------------------------------------------------
 
 const RECIPIENT = loadPrimaryAddress();
-const CWD = new URL("..", import.meta.url).pathname;
 const TMP_TX_FILE = join(tmpdir(), "mantle_swap_tx_test.json");
 const TMP_DATA_FILE = join(tmpdir(), "mantle_swap_data_test.txt");
-
-function runCli(args) {
-  try {
-    const stdout = execFileSync("yarn", ["mantle-cli", ...args, "--json"], {
-      encoding: "utf8",
-      cwd: CWD,
-    });
-    return { error: false, ...JSON.parse(stdout) };
-  } catch (err) {
-    return { error: true, stderr: err.stderr ?? err.message };
-  }
-}
 
 /**
  * hex 문자열 검증

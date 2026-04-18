@@ -1,18 +1,20 @@
 import assert from "assert";
-import { execFileSync } from "child_process";
+import { execSync } from "child_process";
+import { fileURLToPath } from "url";
+import { resolve, dirname } from "path";
 
-const CWD = new URL("..", import.meta.url).pathname;
+const CWD = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 
 /**
  * mantle-cli 를 실행하고 JSON 결과를 파싱해 반환합니다.
  * 실패 시 { error: true, stderr } 를 반환합니다.
  */
 export function runCli(args) {
+  const cmd = ["yarn", "mantle-cli", ...args, "--json"]
+    .map((a) => (a.includes(" ") ? `"${a}"` : a))
+    .join(" ");
   try {
-    const stdout = execFileSync("yarn", ["mantle-cli", ...args, "--json"], {
-      encoding: "utf8",
-      cwd: CWD,
-    });
+    const stdout = execSync(cmd, { encoding: "utf8", cwd: CWD, shell: "cmd.exe" });
     return { error: false, ...JSON.parse(stdout) };
   } catch (err) {
     return {

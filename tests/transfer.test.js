@@ -13,8 +13,8 @@
  */
 
 import assert from "assert";
-import { execFileSync } from "child_process";
 import { loadPrimaryAddress } from "../utils/addresses.js";
+import { runCli } from "../utils/cli.js";
 
 // ---------------------------------------------------------------------------
 // 헬퍼
@@ -22,29 +22,6 @@ import { loadPrimaryAddress } from "../utils/addresses.js";
 
 const RECIPIENT = loadPrimaryAddress();
 
-/**
- * mantle-cli 를 실행하고 JSON 결과를 파싱해 반환합니다.
- * 실패 시 { error: true, stderr } 를 반환합니다.
- */
-function runCli(args) {
-  try {
-    const stdout = execFileSync("yarn", ["mantle-cli", ...args, "--json"], {
-      encoding: "utf8",
-      cwd: new URL("..", import.meta.url).pathname,
-    });
-    return { error: false, ...JSON.parse(stdout) };
-  } catch (err) {
-    return {
-      error: true,
-      stderr: err.stderr ?? err.message,
-      stdout: err.stdout ?? "",
-    };
-  }
-}
-
-/**
- * unsigned_tx 필드가 올바른 구조인지 검증합니다.
- */
 function assertUnsignedTx(tx) {
   assert.ok(tx, "unsigned_tx 필드가 없습니다.");
   assert.ok(

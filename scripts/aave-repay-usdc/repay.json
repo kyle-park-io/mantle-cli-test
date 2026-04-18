@@ -1,0 +1,26 @@
+{
+  "intent": "aave_repay",
+  "human_summary": "Repay 1 USDe to Aave V3 (variable rate)",
+  "unsigned_tx": {
+    "to": "0x458F293454fE0d67EC0655f3672301301DD51422",
+    "data": "0x573ade810000000000000000000000005d3a1ff2b6bab83b63cd9ad0787074081a52ef340000000000000000000000000000000000000000000000000de0b6b3a764000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000005cf08f46628b6d8ae56b1cdd5197fd12172de47e",
+    "value": "0x0",
+    "chainId": 5000
+  },
+  "warnings": [
+    "Ensure USDe is approved for the Aave Pool (0x458F293454fE0d67EC0655f3672301301DD51422) before repaying."
+  ],
+  "aave_reserve": {
+    "symbol": "USDe",
+    "underlying": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+    "aToken": "0xb9aCA933C9c0aa854a6DBb7b12f0CC3FdaC15ee7",
+    "variableDebtToken": "0x0169FD279c8c656037E5D199Cff8137f1e2d807c",
+    "decimals": 18
+  },
+  "built_at_utc": "2026-04-18T06:21:32.336Z",
+  "idempotency_key": "0x7083014af0ad137c33afd4d2e05f1e9330dd73cdca25749fbafea410f705b421",
+  "idempotency_scope": {
+    "sender": "0x5cf08f46628b6d8ae56b1cdd5197fd12172de47e",
+    "request_id": "none"
+  }
+}

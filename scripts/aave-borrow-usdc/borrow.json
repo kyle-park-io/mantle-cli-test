@@ -1,0 +1,27 @@
+{
+  "intent": "aave_borrow",
+  "human_summary": "Borrow 1 USDe from Aave V3 (variable rate)",
+  "unsigned_tx": {
+    "to": "0x458F293454fE0d67EC0655f3672301301DD51422",
+    "data": "0xa415bcad0000000000000000000000005d3a1ff2b6bab83b63cd9ad0787074081a52ef340000000000000000000000000000000000000000000000000de0b6b3a7640000000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000005cf08f46628b6d8ae56b1cdd5197fd12172de47e",
+    "value": "0x0",
+    "chainId": 5000
+  },
+  "warnings": [
+    "Ensure you have sufficient collateral deposited before borrowing.",
+    "Monitor your health factor to avoid liquidation."
+  ],
+  "aave_reserve": {
+    "symbol": "USDe",
+    "underlying": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+    "aToken": "0xb9aCA933C9c0aa854a6DBb7b12f0CC3FdaC15ee7",
+    "variableDebtToken": "0x0169FD279c8c656037E5D199Cff8137f1e2d807c",
+    "decimals": 18
+  },
+  "built_at_utc": "2026-04-18T06:20:25.822Z",
+  "idempotency_key": "0x37ad76b3a0fb1a83356be8201677ab4f0347b7ef158e47d4ecdf76c75f1667e8",
+  "idempotency_scope": {
+    "sender": "0x5cf08f46628b6d8ae56b1cdd5197fd12172de47e",
+    "request_id": "none"
+  }
+}

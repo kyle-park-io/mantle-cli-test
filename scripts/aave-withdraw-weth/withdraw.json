@@ -1,0 +1,26 @@
+{
+  "intent": "aave_withdraw",
+  "human_summary": "Withdraw max (full balance) WETH from Aave V3",
+  "unsigned_tx": {
+    "to": "0x458F293454fE0d67EC0655f3672301301DD51422",
+    "data": "0x69328dec000000000000000000000000deaddeaddeaddeaddeaddeaddeaddeaddead1111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff0000000000000000000000005cf08f46628b6d8ae56b1cdd5197fd12172de47e",
+    "value": "0x0",
+    "chainId": 5000
+  },
+  "warnings": [
+    "Withdrawing collateral may lower your health factor. Check before proceeding."
+  ],
+  "aave_reserve": {
+    "symbol": "WETH",
+    "underlying": "0xdEAddEaDdeadDEadDEADDEAddEADDEAddead1111",
+    "aToken": "0xeAC30Ed8609F564aE65C809C4bf42dB2fF426D2C",
+    "variableDebtToken": "0x0baF5974838114e7001D02782e6B1D8aEE1fc626",
+    "decimals": 18
+  },
+  "built_at_utc": "2026-04-18T06:25:02.883Z",
+  "idempotency_key": "0x8b2f9f150aa205047211af51fa95d3da18c2f13f34ba873e0a0cf5a89bd83867",
+  "idempotency_scope": {
+    "sender": "unscoped",
+    "request_id": "none"
+  }
+}

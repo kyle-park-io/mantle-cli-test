@@ -1,0 +1,19 @@
+{
+  "intent": "approve_skip",
+  "human_summary": "SKIP: USDC already approved for Merchant Moe LB Router V2.2. Current allowance: 0.5 (sufficient).",
+  "unsigned_tx": {
+    "to": "0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9",
+    "data": "0x",
+    "value": "0x0",
+    "chainId": 5000
+  },
+  "warnings": [
+    "Existing allowance 0.5 USDC is sufficient. No approve transaction needed."
+  ],
+  "built_at_utc": "2026-04-18T05:52:36.911Z",
+  "idempotency_key": "0xe6c6968b13b0e2a08c200e3666ed971d966c9097e52f9390b80cc6a36eb814d3",
+  "idempotency_scope": {
+    "sender": "0x5cf08f46628b6d8ae56b1cdd5197fd12172de47e",
+    "request_id": "none"
+  }
+}

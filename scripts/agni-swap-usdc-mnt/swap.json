@@ -1,0 +1,34 @@
+{
+  "intent": "swap",
+  "human_summary": "Swap 1 USDC → WMNT on Agni (fee tier: 0.05%)",
+  "unsigned_tx": {
+    "to": "0x319B69888b0d11cEC22caA5034e25FfFBDc88421",
+    "data": "0x414bf38900000000000000000000000009bc4e0d864854c6afb6eb9a9cdf58ac190d0df900000000000000000000000078c1b0c915c4faa5fffa6cabf0219da63d7f4cb800000000000000000000000000000000000000000000000000000000000001f40000000000000000000000005cf08f46628b6d8ae56b1cdd5197fd12172de47e0000000000000000000000000000000000000000000000000000000069e32c7e00000000000000000000000000000000000000000000000000000000000f42400000000000000000000000000000000000000000000000001435bbe6aade79620000000000000000000000000000000000000000000000000000000000000000",
+    "value": "0x0",
+    "chainId": 5000,
+    "gas": "0x493E0"
+  },
+  "token_info": {
+    "token_in": {
+      "symbol": "USDC",
+      "decimals": 6,
+      "address": "0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9"
+    },
+    "token_out": {
+      "symbol": "WMNT",
+      "decimals": 18,
+      "address": "0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8"
+    }
+  },
+  "pool_params": {
+    "provider": "agni",
+    "fee_tier": 500
+  },
+  "warnings": [],
+  "built_at_utc": "2026-04-18T06:42:22.346Z",
+  "idempotency_key": "0x1d2c5d3af582431aaea341c5482ff64a0268f4b7cffc966c14ca57e95b44b063",
+  "idempotency_scope": {
+    "sender": "0x5cf08f46628b6d8ae56b1cdd5197fd12172de47e",
+    "request_id": "none"
+  }
+}

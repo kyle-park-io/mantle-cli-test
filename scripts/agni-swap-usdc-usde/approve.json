@@ -1,0 +1,17 @@
+{
+  "intent": "approve",
+  "human_summary": "Approve 0.1 USDC for Agni SwapRouter",
+  "unsigned_tx": {
+    "to": "0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9",
+    "data": "0x095ea7b3000000000000000000000000319b69888b0d11cec22caa5034e25fffbdc8842100000000000000000000000000000000000000000000000000000000000186a0",
+    "value": "0x0",
+    "chainId": 5000
+  },
+  "warnings": [],
+  "built_at_utc": "2026-04-18T05:51:38.121Z",
+  "idempotency_key": "0xdbd27b86e41add454d72d42b3753ea0ad2db9fd92976faae270e3d10d367adf2",
+  "idempotency_scope": {
+    "sender": "0x5cf08f46628b6d8ae56b1cdd5197fd12172de47e",
+    "request_id": "none"
+  }
+}

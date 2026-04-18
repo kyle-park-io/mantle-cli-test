@@ -1,0 +1,28 @@
+{
+  "intent": "aave_supply",
+  "human_summary": "Supply 0.004 WETH to Aave V3 (will receive aWETH)",
+  "unsigned_tx": {
+    "to": "0x458F293454fE0d67EC0655f3672301301DD51422",
+    "data": "0x617ba037000000000000000000000000deaddeaddeaddeaddeaddeaddeaddeaddead1111000000000000000000000000000000000000000000000000000e35fa931a00000000000000000000000000005cf08f46628b6d8ae56b1cdd5197fd12172de47e0000000000000000000000000000000000000000000000000000000000000000",
+    "value": "0x0",
+    "chainId": 5000
+  },
+  "warnings": [
+    "Ensure WETH is approved for the Aave Pool (0x458F293454fE0d67EC0655f3672301301DD51422) before supplying.",
+    "COLLATERAL CHECK: WETH is an Isolation Mode asset. After supply, verify getUserAccountData shows totalCollateralBase > 0. If collateral was not auto-enabled, call mantle_buildAaveSetCollateral with user=<address> to diagnose and fix.",
+    "ISOLATION MODE: WETH is an Isolation Mode asset (debt ceiling $30,000,000). If this is your ONLY collateral you will enter Isolation Mode and can ONLY borrow: USDT0, USDC, USDe, GHO. Other assets (e.g. sUSDe, FBTC, wrsETH) CANNOT be borrowed in Isolation Mode."
+  ],
+  "aave_reserve": {
+    "symbol": "WETH",
+    "underlying": "0xdEAddEaDdeadDEadDEADDEAddEADDEAddead1111",
+    "aToken": "0xeAC30Ed8609F564aE65C809C4bf42dB2fF426D2C",
+    "variableDebtToken": "0x0baF5974838114e7001D02782e6B1D8aEE1fc626",
+    "decimals": 18
+  },
+  "built_at_utc": "2026-04-18T06:12:54.471Z",
+  "idempotency_key": "0xf9e04ef457af26d9d5ae2359ab5a45afeffd52e8582bbe8af80798f1c96f5754",
+  "idempotency_scope": {
+    "sender": "0x5cf08f46628b6d8ae56b1cdd5197fd12172de47e",
+    "request_id": "none"
+  }
+}

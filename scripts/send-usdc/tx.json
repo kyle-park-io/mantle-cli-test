@@ -1,0 +1,24 @@
+{
+  "intent": "transfer_token",
+  "human_summary": "Transfer 0.1 USDC → 0xB01EddA2B28d8737deB4bA9195e4299e37c2bEb2",
+  "unsigned_tx": {
+    "to": "0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9",
+    "data": "0xa9059cbb000000000000000000000000b01edda2b28d8737deb4ba9195e4299e37c2beb200000000000000000000000000000000000000000000000000000000000186a0",
+    "value": "0x0",
+    "chainId": 5000
+  },
+  "warnings": [],
+  "built_at_utc": "2026-04-18T05:56:07.638Z",
+  "token_info": {
+    "token_in": {
+      "symbol": "USDC",
+      "decimals": 6,
+      "address": "0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9"
+    }
+  },
+  "idempotency_key": "0xc9259e1df95995ef7453f3e6ceebec0e7abd8d4b1abbdc086dd40060193dba25",
+  "idempotency_scope": {
+    "sender": "unscoped",
+    "request_id": "none"
+  }
+}

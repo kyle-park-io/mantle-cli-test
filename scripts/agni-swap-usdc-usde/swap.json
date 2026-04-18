@@ -1,0 +1,34 @@
+{
+  "intent": "swap",
+  "human_summary": "Swap 0.1 USDC → USDe on Agni (fee tier: 0.01%)",
+  "unsigned_tx": {
+    "to": "0x319B69888b0d11cEC22caA5034e25FfFBDc88421",
+    "data": "0x414bf38900000000000000000000000009bc4e0d864854c6afb6eb9a9cdf58ac190d0df90000000000000000000000005d3a1ff2b6bab83b63cd9ad0787074081a52ef3400000000000000000000000000000000000000000000000000000000000000640000000000000000000000005cf08f46628b6d8ae56b1cdd5197fd12172de47e0000000000000000000000000000000000000000000000000000000069e320a300000000000000000000000000000000000000000000000000000000000186a000000000000000000000000000000000000000000000000001615998c21749ed0000000000000000000000000000000000000000000000000000000000000000",
+    "value": "0x0",
+    "chainId": 5000,
+    "gas": "0x493E0"
+  },
+  "token_info": {
+    "token_in": {
+      "symbol": "USDC",
+      "decimals": 6,
+      "address": "0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9"
+    },
+    "token_out": {
+      "symbol": "USDe",
+      "decimals": 18,
+      "address": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+    }
+  },
+  "pool_params": {
+    "provider": "agni",
+    "fee_tier": 100
+  },
+  "warnings": [],
+  "built_at_utc": "2026-04-18T05:51:47.171Z",
+  "idempotency_key": "0xefebc094d1e781783090b6a8a02924b39f44e3f2e524b62c38860d945d7fedb8",
+  "idempotency_scope": {
+    "sender": "0x5cf08f46628b6d8ae56b1cdd5197fd12172de47e",
+    "request_id": "none"
+  }
+}

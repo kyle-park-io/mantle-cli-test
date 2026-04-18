@@ -1,0 +1,17 @@
+{
+  "intent": "unwrap_mnt",
+  "human_summary": "Unwrap 1.463594627043017554 WMNT → MNT",
+  "unsigned_tx": {
+    "to": "0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8",
+    "data": "0x2e1a7d4d000000000000000000000000000000000000000000000000144fbb8f1011c352",
+    "value": "0x0",
+    "chainId": 5000
+  },
+  "warnings": [],
+  "built_at_utc": "2026-04-18T06:42:32.655Z",
+  "idempotency_key": "0x8ab8815a8c9163f60ef6170791acf361a4dff0bdf0d2e011c56d2e1abcfb863c",
+  "idempotency_scope": {
+    "sender": "unscoped",
+    "request_id": "none"
+  }
+}

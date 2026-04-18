@@ -1,0 +1,17 @@
+{
+  "intent": "transfer_native",
+  "human_summary": "Transfer 0.1 MNT → 0xB01EddA2B28d8737deB4bA9195e4299e37c2bEb2",
+  "unsigned_tx": {
+    "to": "0xB01EddA2B28d8737deB4bA9195e4299e37c2bEb2",
+    "data": "0x",
+    "value": "0x16345785d8a0000",
+    "chainId": 5000
+  },
+  "warnings": [],
+  "built_at_utc": "2026-04-18T05:38:33.006Z",
+  "idempotency_key": "0xd89917b44b296daff8096c41971bb2d5e4cfc36e1ba85053edce1ad058e8d965",
+  "idempotency_scope": {
+    "sender": "unscoped",
+    "request_id": "none"
+  }
+}

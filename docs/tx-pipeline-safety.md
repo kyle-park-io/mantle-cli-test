@@ -12,11 +12,11 @@
 
 ## 재현 조건
 
-| 경로 | 결과 |
-|------|------|
-| `mantle-cli ... > file.json` → `--transaction "$(cat file.json)"` | ✅ 정상 |
+| 경로                                                                                | 결과              |
+| ----------------------------------------------------------------------------------- | ----------------- |
+| `mantle-cli ... > file.json` → `--transaction "$(cat file.json)"`                   | ✅ 정상           |
 | `mantle-cli ... > file.json` → Python 재직렬화 → `--transaction "$(cat file.json)"` | ❌ hex 1글자 손상 |
-| `TX_JSON=$(mantle-cli ...)` → `echo "$TX_JSON" \| bun ... --transaction "$TX_JSON"` | ❌ 손상 가능 |
+| `TX_JSON=$(mantle-cli ...)` → `echo "$TX_JSON" \| bun ... --transaction "$TX_JSON"` | ❌ 손상 가능      |
 
 ---
 
@@ -27,6 +27,7 @@
 `json.load → json.dump` 왕복은 투명한 복사가 아닙니다.
 
 **① `separators` 기본값이 공백을 추가함**
+
 ```python
 # 기본 동작 — 공백 추가됨
 json.dump(tx, f)
@@ -37,13 +38,16 @@ json.dump(tx, f)
 ```
 
 **② `ensure_ascii=True` (기본값) — 유니코드 이스케이프 변환**
+
 ```python
 # human_summary 필드의 → 같은 특수문자가 변환됨
 "Swap 10 USDC → wTSLAx"  →  "Swap 10 USDC \u2192 wTSLAx"
 ```
+
 JSON 바이트 길이가 바뀌면서 이후 파싱 오프셋이 밀릴 수 있음
 
 **③ hex string을 숫자로 변환하는 코드가 섞일 경우**
+
 ```python
 # 의도치 않은 타입 변환
 value = int(tx["unsigned_tx"]["value"], 16)  # "0xde0b..." → 정수

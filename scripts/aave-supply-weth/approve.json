@@ -1,0 +1,17 @@
+{
+  "intent": "approve",
+  "human_summary": "Approve 0.004 WETH for Aave V3 Pool",
+  "unsigned_tx": {
+    "to": "0xdEAddEaDdeadDEadDEADDEAddEADDEAddead1111",
+    "data": "0x095ea7b3000000000000000000000000458f293454fe0d67ec0655f3672301301dd51422000000000000000000000000000000000000000000000000000e35fa931a0000",
+    "value": "0x0",
+    "chainId": 5000
+  },
+  "warnings": [],
+  "built_at_utc": "2026-04-18T06:12:45.011Z",
+  "idempotency_key": "0x74b634b5bac118844181d8f44088f896222401c161c27f30f6571519311cdfd6",
+  "idempotency_scope": {
+    "sender": "0x5cf08f46628b6d8ae56b1cdd5197fd12172de47e",
+    "request_id": "none"
+  }
+}
